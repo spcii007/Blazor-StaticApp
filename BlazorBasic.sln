@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorBasic", "Client\BlazorBasic.csproj", "{A789CAE2-99A1-4D0D-B492-6FB0A727E94D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPCII_APP", "SPCII_APP\SPCII_APP.csproj", "{C996CA69-E040-40A3-A393-2104F35B84DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A789CAE2-99A1-4D0D-B492-6FB0A727E94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A789CAE2-99A1-4D0D-B492-6FB0A727E94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A789CAE2-99A1-4D0D-B492-6FB0A727E94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A789CAE2-99A1-4D0D-B492-6FB0A727E94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C996CA69-E040-40A3-A393-2104F35B84DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C996CA69-E040-40A3-A393-2104F35B84DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C996CA69-E040-40A3-A393-2104F35B84DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C996CA69-E040-40A3-A393-2104F35B84DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
