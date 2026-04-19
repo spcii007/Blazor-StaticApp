@@ -1,19 +1,19 @@
 /*
 
-Known Template 
+Eatery Cafe Template 
 
-https://templatemo.com/tm-516-known
+http://www.templatemo.com/tm-515-eatery
 
 */
 
-  @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
   body {
     background: #ffffff;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    padding-top: 70px;
   }
+
 
 
   /*---------------------------------------
@@ -21,7 +21,6 @@ https://templatemo.com/tm-516-known
   -----------------------------------------*/
 
   h1,h2,h3,h4,h5,h6 {
-    font-family: 'Muli', sans-serif;
     font-weight: bold;
     line-height: inherit;
   }
@@ -29,7 +28,7 @@ https://templatemo.com/tm-516-known
   h1 {
     color: #252525;
     font-size: 3em;
-    line-height: normal;
+    line-height: 50px;
   }
 
   h2 {
@@ -72,15 +71,8 @@ https://templatemo.com/tm-516-known
     text-decoration: none !important;
   }
 
-  a,
-  input, button,
-  .form-control {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-
   a:hover, a:active, a:focus {
-    color: #29ca8e;
+    color: #ce3232;
     outline: none;
   }
 
@@ -102,12 +94,16 @@ https://templatemo.com/tm-516-known
     margin: 0;
   }
 
-  .section-title small {
-    display: block;
+  .section-title h4 {
+    color: #bfbdbd;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
   }
 
   .overlay {
-    background: rgba(20,20,20,0.5);
+    background: rgba(0,0,0,0.5);
     position: absolute;
     top: 0;
     right: 0;
@@ -117,59 +113,20 @@ https://templatemo.com/tm-516-known
     height: 100%;
   }
 
-  .entry-form {
-    background: #252020;
-    border-radius: 100%;
-    text-align: center;
-    padding: 6em;
-    width: 450px;
-    height: 450px;
-  }
-
-  .entry-form h2 {
-    color: #ffffff;
-    margin: 0;
-  }
-
-  .entry-form .form-control {
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid;
-    border-radius: 0;
-    box-shadow: none;
-    height: 45px;
-    margin: 10px 0;
-  }
-
-  .entry-form .submit-btn {
-    background: #ffffff;
-    border-radius: 50px;
-    border: 0;
-    color: #252020;
-    width: 50%;
-    height: 50px;
-    margin: 30px auto;
-    margin-bottom: 10px;
-  }
-
-  .entry-form .submit-btn:hover {
-    background: #3f51b5;
-    color: #ffffff;
-  }
-
   section {
     position: relative;
     padding: 100px 0;
   }
 
-  #team,
-  #testimonial {
-    background: #f9f9f9;
-  }
-
   #team, 
+  #menu,
   #testimonial {
     text-align: center;
+  }
+
+  .about-image img,
+  .team-thumb img {
+    width: 100%;
   }
   
   #google-map iframe {
@@ -185,19 +142,14 @@ https://templatemo.com/tm-516-known
   -----------------------------------------*/
 
   .section-btn {
-    background: transparent;
-    border-radius: 50px;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    background: #ce3232;
+    border-radius: 0;
+    border: 0;
+    color: #f9f9f9;
     font-size: inherit;
     font-weight: normal;
-    padding: 15px 30px;
-    transition: 0.5s;
-  }
-
-  .section-btn:hover {
-    background: #ffffff;
-    border-color: transparent;
+    padding: 10px 25px;
+    transition: 0.5s 0.2s;
   }
 
 
@@ -257,22 +209,23 @@ https://templatemo.com/tm-516-known
   -----------------------------------------*/
 
   .custom-navbar {
-    background: #ffffff;
-    border-top: 5px solid #29ca8e;
-    border-bottom: 0;
-    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    padding: 12px 0;
+    border: none;
     margin-bottom: 0;
-    padding: 0;
+    padding: 25px 0;
   }
 
   .custom-navbar .navbar-brand {
-    color: #454545;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
-    line-height: 40px;
+  }
+
+  .custom-navbar .navbar-brand span {
+    color: #ce3232;
+  }
+
+  .top-nav-collapse {
+    background: #ffffff;
   }
 
   .custom-navbar .navbar-nav.navbar-nav-first {
@@ -284,23 +237,40 @@ https://templatemo.com/tm-516-known
     padding-left: 12px;
   }
 
-  .custom-navbar .navbar-nav.navbar-right li a .fa {
-    background: #29ca8e;
-    border-radius: 100%;
-    color: #ffffff;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
+  .custom-navbar .navbar-nav.navbar-right .section-btn {
     display: inline-block;
-    margin-right: 5px;
+    margin: 0.2em 0 0 1em;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right .section-btn:hover {
+    background: #292929;
+    color: #ffffff;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right .section-btn:focus {
+    color: #ffffff;
+  }
+
+  .custom-navbar .navbar-nav.navbar-right .section-btn a {
+    padding: 10px 25px;
+  }
+
+  .custom-navbar .nav .section-btn a:hover {
+    color: #ffffff;
   }
 
   .custom-navbar .nav li a {
-    line-height: 40px;
-    color: #575757;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
     padding-right: 22px;
     padding-left: 22px;
+    text-transform: uppercase;
+  }
+
+  .custom-navbar .nav li a:hover {
+    background: transparent;
+    color: #ce3232;
   }
 
   .custom-navbar .navbar-nav > li > a:hover,
@@ -308,14 +278,9 @@ https://templatemo.com/tm-516-known
     background-color: transparent;
   }
 
-  .custom-navbar .nav li a:hover {
-    background-color: #29ca8e;
-    color: #ffffff;
-  }
-
   .custom-navbar .nav li.active > a {
-    background-color: #29ca8e;
-    color: #ffffff;
+    background-color: transparent;
+    color: #ce3232;
   }
 
   .custom-navbar .navbar-toggle {
@@ -332,10 +297,37 @@ https://templatemo.com/tm-516-known
     border-color: transparent;
   }
 
+  @media(min-width:768px) {
+    .custom-navbar {
+      border-bottom: 0;
+      background: 0 0; 
+    }
+
+    .custom-navbar.top-nav-collapse {
+      background: #ffffff;
+      -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+      padding: 12px 0;
+    }
+
+    .top-nav-collapse .navbar-brand {
+      color: #454545;
+    }
+
+    .top-nav-collapse .nav li a {
+      color: #575757;
+    }
+
+    .top-nav-collapse .nav .section-btn a {
+      color: #ffffff;
+    }
+  }
+
 
 
   /*---------------------------------------
-      HOME  & SLIDER            
+      HOME              
   -----------------------------------------*/
 
   #home {
@@ -344,23 +336,53 @@ https://templatemo.com/tm-516-known
 
   #home h1 {
     color: #ffffff;
+    padding-bottom: 30px;
   }
 
   #home h3 {
     color: #f9f9f9;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    line-height: inherit;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     margin: 0;
-    padding: 5px 0 40px 0;
   }
 
   @media (min-width: 768px) {
-    .home-slider .col-md-6 {
+    .slider .col-md-8 {
       padding-left: 0;
     }
   }
 
-  .home-slider .caption {
+  .slider .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 2em;
+    justify-content: center;
+  }
+
+  .owl-theme .owl-dots .owl-dot {
+    display: block;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 7px 10px;
+    border: 2px solid #d9d9d9;
+    background: transparent;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #ffffff;
+    border-color: transparent;
+  }
+
+  .slider .caption {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -369,58 +391,47 @@ https://templatemo.com/tm-516-known
     height: 100%;
     color: #fff;
     cursor: e-resize;
+    padding: 4em 0 0 2em;
   }
 
-  .home-slider .item {
+  .slider .item {
+    background-position: inherit;
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: cover;
     height: 650px;
   }
-  
-  .caption h3 a { color: #FFF; }
-  .caption h3 a:hover { color: #FF3; }
 
-  .home-slider .item-first {
+  .slider .item-first {
     background-image: url(../images/slider-image1.jpg);
-	background-position: center;
   }
 
-  .home-slider .item-second {
+  .slider .item-second {
     background-image: url(../images/slider-image2.jpg);
   }
 
-  .home-slider .item-third {
+  .slider .item-third {
     background-image: url(../images/slider-image3.jpg);
   }
 
-
-
-  /*---------------------------------------
-      FEATURE              
-  -----------------------------------------*/
-
-  .feature-thumb {
-    border: 1px solid #f0f0f0;
-    padding: 5em 3em;
+  .slider .item-second .section-btn {
+    background: #292929;
   }
 
-  .feature-thumb span {
-    background: #3f51b5;
-    border-radius: 50px;
+  .slider .item-second .section-btn:hover {
+    background: #ffffff;
+  }
+
+  .slider .item-third .section-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+  }
+
+  .slider .item-third .section-btn:hover,
+  .slider .item-third .section-btn:focus {
+    background: #ce3232;
+    border-color: transparent;
     color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    margin-bottom: 5px;
-  }
-
-  .feature-thumb h3 {
-    margin: 10px 0;
   }
 
 
@@ -429,29 +440,20 @@ https://templatemo.com/tm-516-known
       ABOUT              
   -----------------------------------------*/
 
-  #about figure {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 15px;
+  #about {
+    padding-bottom: 0;
   }
 
-  #about figure span {
-    float: left;
-    margin-left: -15px;
-    padding: 15px 20px;
-    position: relative;
-    top: 20px;
+  .about-info {
+    padding: 0 6em 5em 0;
   }
 
-  #about figure span i {
-    background: #29ca8e;
-    border-radius: 50px;
-    color: #ffffff;
-    font-size: 25px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
+  .about-info .section-title {
+    padding-bottom: 20px;
+  }
+
+  .about-image {
+    position: absolute;
   }
 
 
@@ -460,164 +462,177 @@ https://templatemo.com/tm-516-known
       TEAM              
   -----------------------------------------*/
 
+  #team {
+    background: #f9f9f9;
+  }
+
   .team-thumb {
-    background: #ffffff;
     position: relative;
     overflow: hidden;
-    text-align: left;
+    cursor: pointer;
   }
 
   .team-info {
-    padding: 20px 30px;
+    padding: 10px 30px 20px 30px;
   }
 
-  .team-image img {
+  .team-thumb .team-hover {
+    position: absolute;
+    background: #1c1c1c;
     width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.5s 0.2s;
   }
 
-  .team-thumb .social-icon {
-    border-top: 1px solid #f0f0f0;
-    padding: 4px 20px 0 20px;
+  .team-thumb:hover .team-hover {
+    opacity: 0.95;
+    transition-delay: 0.3s;
+    transform: translateY(0);
+  }
+
+  .team-thumb img {
+    transition: 0.5s 0.2s;
+  }
+
+  .team-thumb:hover img {
+    transform: scale(1.2);
   }
 
   .team-thumb .social-icon li a {
-    background: #ffffff;
-    color: #252020;
+    background: #292929;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #d9d9d9;
+    font-size: 20px;
+    margin: 15px 5px 0 5px;
   }
 
-  .team-info h3 {
-    margin: 0;
+  .team-thumb .team-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
   }
+
+  .team-item h4 {
+    color: #ffffff;
+  }
+
+  .team-info p {
+    color: #bfbdbd;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
 
 
   /*---------------------------------------
-      COURSES             
+     MENU              
   -----------------------------------------*/
 
-  #courses .section-title {
-    text-align: center;
+  #menu {
+    padding-bottom: 0;
   }
 
-  #courses .owl-theme .owl-nav {
-    margin-top: 30px;
+  #menu .container {
+    width: 100%;
   }
 
-  #courses .owl-theme .owl-nav [class*=owl-] {
-    border-radius: 2px;
-    font-size: 16px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
+  #menu .col-md-4 {
+    margin: 0;
     padding: 0;
   }
 
-  .courses-thumb {
-    background: #f9f9f9;
-    position: relative;
-  }
-
-  .courses-top {
-    position: relative;
-  }
-
-  .courses-image {
-    background: linear-gradient(to right, #202020, #101010);
-  }
-
-  .courses-date {
-    background: linear-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  .menu-thumb img {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 20px 25px;
+    transition: 0.5s;
   }
 
-  .courses-date span,
-  .courses-author span {
-    font-size: 14px;
-    font-weight: bold;
+  .menu-thumb:hover img {
+    transform: scale(1.15);
   }
 
-  .courses-date span {
-    color: #ffffff;
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  .courses-detail {
-    padding: 25px 25px 15px 25px;
-  }
-
-  .courses-detail h3 {
-    margin: 0 0 2px 0;
-  }
-
-  .courses-info {
-    border-top: 1px solid #f0f0f0;
+  #menu .menu-thumb {
+    overflow: hidden;
     position: relative;
-    clear: both;
-    padding: 15px 25px;
+    cursor: pointer;
+    width: 102%;
   }
 
-  .courses-author,
-  .courses-author span {
-    display: inline-block;
-    vertical-align: middle;
+  .menu-thumb .menu-info {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: left;
+    padding: 25px 30px;
+    transition: 0.5s 0.2s;
   }
 
-  .courses-author img {
-    display: inline-block !important;
-    border-radius: 50px;
-    width: 50px !important;
-    height: 50px;
-    margin-right: 10px;
+  .menu-info .menu-item {
+    float: left;
   }
 
-  .courses-price {
+  .menu-info .menu-price {
     float: right;
+  }
+
+  .menu-info .menu-price span {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    display: block;
     margin-top: 10px;
   }
 
-  .courses-price span {
-    background: #29ca8e;
-    border-radius: 2px;
-    color: #ffffff;
+  .menu-thumb .menu-info h3,
+  .menu-thumb .menu-info p,
+  .menu-thumb .menu-info span {
+    transform: translateY(100%);
+    opacity: 0;
     display: block;
-    padding: 5px 10px;
-  }
-
-  .courses-price.free span {
-    background: #3f51b5;
-  }
-
-
-
-  /*---------------------------------------
-     NEWS              
-  -----------------------------------------*/
-
-  .news-thumb {
-    clear: both;
+    transition: 0.5s 0.2s;
+    color: #ffffff;
+    z-index: 2;
     position: relative;
-    overflow: hidden;
-    margin-bottom: 30px;
   }
 
-  .news-thumb .news-image {
-    float: left;
-    width: 40%;
-    margin-right: 30px;
+  .menu-thumb .menu-info h3 {
+    margin-top: 0;
   }
 
-  .news-info h3 {
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  .news-date span {
-    color: #909090;
+  .menu-thumb .menu-info p {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 10px;
     font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .menu-thumb:hover .menu-info h3,
+  .menu-thumb:hover .menu-info p,
+  .menu-thumb:hover .menu-info span {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .menu-thumb:hover .menu-info {
+    background: rgba(0,0,0,0.8);
   }
 
 
@@ -626,54 +641,54 @@ https://templatemo.com/tm-516-known
       TESTIMONIAL             
   -----------------------------------------*/
 
-  #testimonial .item {
-    background: #ffffff;
-    margin: 20px 0;
-    padding: 4em 3em;
-    text-align: left;
+  #testimonial {
+    background: url('../images/testimonial-bg.jpg') center center no-repeat;
+    background-size: cover;
   }
 
-  #courses .col-md-4,
-  #testimonial .col-md-4 {
-    display: block;
-    width: 100%;
+  #testimonial .owl-dots {
+    position: relative;
+    top: 0;
+    right: 0;
+    justify-content: center;
   }
 
-  #testimonial .item > p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .tst-rating {
-    margin-bottom: 15px;
-  }
-
-  .tst-rating .fa {
-    color: #3f51b5;
-  }
-
-  .tst-image,
-  .tst-author {
+  #testimonial .owl-theme .owl-dots .owl-dot,
+  #testimonial .owl-theme .owl-dots .owl-dot span {
     display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 20px;
-    text-align: left;
   }
 
-  .tst-image img {
-    border-radius: 50px;
-    width: 60px !important;
-    height: 60px;
-    margin-right: 15px;
+  #testimonial .owl-theme .owl-dots .owl-dot span {
+    margin: 20px 5px;
   }
 
-  .tst-author h4 {
-    margin: 0;
+  #testimonial h2 {
+    color: #ffffff;
+  }
+
+  #testimonial p,
+  .tst-author h4,
+  .tst-author span {
+    display: inline;
+  }
+
+  #testimonial p {
+    color: #d9d9d9;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .tst-author {
+    margin-top: 20px;
+  }
+
+  .tst-author h4,
+  .tst-author span {
+    color: #b2b2b2;
   }
 
   .tst-author span {
-    color: #808080;
-    font-size: 14px;
+    margin-left: 5px;
   }
 
 
@@ -682,55 +697,49 @@ https://templatemo.com/tm-516-known
       CONTACT             
   -----------------------------------------*/
 
-  #contact {
-    background: #3f51b5;
-  }
-
-  #contact h2 {
-    color: #ffffff;
-  }
-
   #contact .section-title {
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
-  #contact h2 > small,
-  #contact p,
-  #contact a {
-    color: #f9f9f9;
+  #contact .text-success,
+  #contact .text-danger {
+    display: none;
   }
 
-  #contact-form {
-    padding: 1em 0;
-  }
-
-  #contact-form .col-md-12,
-  #contact-form .col-md-4 {
-    padding-left: 0;
-  }
-
-  #contact-form .form-control {
+  #contact .form-control {
+    background: transparent;
     border: 0;
-    border-radius: 5px;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0;
     box-shadow: none;
-    margin: 10px 0;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.4s;
   }
 
-  #contact-form input {
+  #contact .form-control:hover,
+  #contact .form-control:focus {
+    border-bottom-color: #c9c9c9;
+  }
+
+  #contact input {
+    height: 55px;
+  }
+
+  #contact button#cf-submit {
+    background: #ce3232;
+    border-radius: 0;
+    border: 0;
+    color: #ffffff;
+    font-weight: bold;
     height: 50px;
   }
 
-  #contact-form input[type='submit'] {
-    border-radius: 50px;
-    border: 1px solid transparent;
-  }
-
-  #contact-form input[type='submit']:hover {
-    background: transparent;
-    border-color: #ffffff;
+  #contact button#cf-submit:hover {
+    background: #292929;
     color: #ffffff;
   }
-  
 
 
 
@@ -739,8 +748,9 @@ https://templatemo.com/tm-516-known
   -----------------------------------------*/
 
   footer {
-    background: #252020;
+    border-top: 1px solid rgba(0,0,0,0.05);
     padding: 120px 0;
+    padding-bottom: 80px;
   }
 
   footer .section-title {
@@ -764,65 +774,48 @@ https://templatemo.com/tm-516-known
     margin-bottom: 0;
   }
 
+  .footer-info,
   footer .social-icon {
-    margin-top: 25px;
-  }
-
-  .footer-info {
-    margin-right: 2em;
-  }
-
-  .footer-info h2 {
-    color: #ffffff;
-    padding: 0;
-  }
-
-  .footer_menu h2 {
-    margin-top: 2em;
-  }
-
-  .footer_menu ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer_menu li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 10px 5px 0;
-  }
-
-  .newsletter-form .form-control {
-    background: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    border: 0;
-    border-bottom: 1px solid #303030;
-    height: 50px;
-    margin: 5px 0;
-  }
-
-  .newsletter-form input[type="submit"] {
-    background: transparent;
-    border: 1px solid #f9f9f9;
-    border-radius: 50px;
-    color: #ffffff;
-    display: block;
     margin-top: 20px;
-    outline: none;
-    width: 50%;
   }
 
-  .newsletter-form input[type="submit"]:hover {
-    background: #29ca8e;
-    border-color: transparent;
+  .footer-open-hour {
+    background: #ce3232;
+    background: url('../images/footer-open-hour-bg.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 0;
+    padding: 40px 0 40px 80px;
+    overflow: hidden;
+    position: relative;
+    z-index: 22;
+    right: 20px;
+    bottom: 20px;
   }
 
-  .newsletter-form .form-group span {
-    color: #909090;
-    display: block;
-    font-size: 12px;
-    margin-top: 20px;
+  .footer-open-hour::after {
+    background: rgba(29,29,29,0.85);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2222;
+  }
+
+  .footer-open-hour h2 {
+    color: #ffffff;
+  }
+
+  .footer-open-hour p {
+    color: #d9d9d9;
+  }
+
+  .footer-open-hour strong {
+    color: #f9f9f9;
   }
 
 
@@ -845,7 +838,7 @@ https://templatemo.com/tm-516-known
 
   .social-icon li a {
     border-radius: 100px;
-    color: #29ca8e;
+    color: #ce3232;
     font-size: 15px;
     width: 35px;
     height: 35px;
@@ -854,11 +847,10 @@ https://templatemo.com/tm-516-known
     text-align: center;
     transition: all 0.4s ease-in-out;
     position: relative;
-    margin: 5px 5px 5px 0;
   }
 
   .social-icon li a:hover {
-    background: #29ca8e;
+    background: #ce3232;
     color: #ffffff;
   }
 
@@ -874,25 +866,50 @@ https://templatemo.com/tm-516-known
     }
   }
 
+
+  @media only screen and (max-width: 1200px) {
+    .about-info {
+      padding-right: 0;
+    }
+
+    .about-image {
+      position: relative;
+    }
+  }
+
+
   @media only screen and (max-width: 992px) {
-    section,
-    footer {
+    section {
       padding: 60px 0;
     }
 
-    .home-slider .item {
-      background-position: center center;
+    .custom-navbar .section-btn {
+      margin-left: 1em;
     }
 
-    .feature-thumb,
-    .about-info,
-    .team-thumb,
-    .footer-info {
+    .slider .item {
+      background-position: center;
+    }
+
+    .about-info {
+      padding: 0;
+    }
+
+    .team-info {
       margin-bottom: 50px;
     }
 
-    .contact-image {
-      margin-top: 50px;
+    #menu .menu-thumb {
+      width: 103%;
+    }
+
+    #testimonial {
+      background-position: 50% 0 !important;
+    }
+
+    #google-map,
+    .footer-info {
+      margin-bottom: 50px;
     }
   }
 
@@ -922,12 +939,8 @@ https://templatemo.com/tm-516-known
       text-align: center;
     }
 
-    .custom-navbar .navbar-brand,
     .custom-navbar .nav li a {
       line-height: normal;
-    }
-
-    .custom-navbar .nav li a {
       padding: 10px;
     }
 
@@ -946,51 +959,49 @@ https://templatemo.com/tm-516-known
       display: inline-block;
     }
 
-    .footer-info {
-      margin-right: 0;
+    .custom-navbar .navbar-nav.navbar-right .section-btn {
+      display: block !important;
+      width: 50%;
+      margin: 10px auto 10px auto;
+      padding: 10px;
     }
 
-    .footer-info.newsletter-form {
-      margin-bottom: 0;
+    .custom-navbar .section-btn a {
+      color: #ffffff !important;
     }
 
-    .entry-form {
-      display: block;
-      margin: 0 auto;
+    .slider .caption {
+      padding: 0;
+    }
+
+    .menu-thumb .menu-info {
+      top: 80%;
+    }
+
+    footer {
+      padding: 60px 0;
+      padding-bottom: 60px;
+    }
+
+    .footer-open-hour {
+      right: 0;
+      bottom: 0;
+      margin-top: 30px;
     }
   }
 
 
   @media only screen and (max-width: 580px) {
+    h1 {
+      font-size: 2.1em;
+    }
+
     h2 {
       font-size: 1.8em;
     }
 
-    #testimonial .item {
-      padding: 2em;
-    }
-
-    .contact-image {
-      margin-top: 0;
+    .menu-thumb .menu-info {
+      top: 60%;
     }
   }
 
-  @media only screen and (max-width: 480px) {
-    h1 {
-      font-size: 2em;
-    }
-
-    #home h3 {
-      font-size: 14px;
-    }
-
-    .entry-form {
-      border-radius: 0;
-      padding: 2em;
-      max-width: 100%;
-      max-height: 100%;
-      width: inherit;
-      height: inherit;
-    }
-  }
-  
