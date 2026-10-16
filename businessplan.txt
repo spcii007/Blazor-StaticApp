@@ -1,0 +1,295 @@
+AI-Accelerated .NET Modernization — Business Plan
+Oct 1, 2026 
+Executive summary
+The business sells one outcome: legacy Microsoft-stack apps become modern, documented, AI-ready systems that the client's own team can maintain with AI. Year 1 target revenue is about $350K as a solo consultant, with a conservative floor near $150K.
+Positioning line: "I modernize legacy .NET apps with AI in half the time of a traditional rewrite, then teach your team to keep them modern."
+Three core offers sit inside one client journey:
+Codebase archaeology recovers what the app does before anyone touches it.
+AI-accelerated modernization moves it to current .NET, module by module, behind a test safety net.
+Agent-ready integration exposes the modernized app to AI agents through clean APIs and MCP servers.
+A paid assessment is the front door. Team training and monthly retainers turn one-off projects into recurring revenue. A YouTube series that modernizes a real legacy app on camera is the main credibility and lead engine.
+All prices below are US-market estimates for a senior independent consultant (effective rate $150–200/hour). Validate them with your first 3–5 sales conversations and adjust.
+Target market and ideal client
+The ideal client is a mid-sized company (50–2,000 employees) running a business-critical in-house app on .NET Framework, with a small dev team and no appetite for a risky full rewrite.
+Trait
+What it looks like
+Tech stack
+.NET Framework 4.x, WebForms, MVC 5, WCF, VB.NET, WinForms, EF6, SQL Server 2012–2016
+Pain trigger
+Original developers left or retiring; security audit flags; Windows Server / SQL end-of-support; cloud move blocked
+Team
+2–15 in-house developers, or one IT manager plus contractors
+Budget
+$50K–$300K a year on maintenance already; modernization quotes of $250K+ from larger firms
+Buyer
+CTO, VP/Director of IT, Head of Engineering; CFO signs off
+Verticals to lead with (in this order):
+Manufacturing — custom MES, quality, scheduling and ERP-integration apps; pays well and values reliability.
+Nonprofit / fundraising — custom donor, CRM and Blackbaud-integration tools; budgets are smaller but referrals travel fast.
+Automotive suppliers and dealer groups — warranty, parts and supplier-portal apps.
+Telecom (regional carriers, MSPs) — billing, provisioning and support tools.
+Pick one as the primary vertical for the first 6 months. The YouTube series stays vertical-neutral so it sells into all four.
+Service ladder
+Every offer leads to the next, so one client can grow from a $10K assessment to $150K+ over 12–18 months.
+service ladder · 8 steps, prices from this plan
+Clients can skip steps (a well-documented app goes straight to modernization), but every engagement is proposed toward a retainer, and retainer clients are the natural buyers of the next app's assessment.
+Offer 1: AI-accelerated legacy .NET modernization
+Fixed-price migration of a legacy .NET app to current .NET, priced by size and complexity, always preceded by a paid assessment. AI agents do the bulk conversion; you own architecture, verification and sign-off.
+Typical scope: .NET Framework to modern .NET (LTS), WebForms or MVC 5 to Blazor or ASP.NET Core, WCF to REST or gRPC, EF6 to EF Core, on-prem to Azure, plus CI/CD.
+Method: assessment ? characterization tests ? convert one module (pilot) ? convert the rest in sprints ? parallel run ? cutover.
+Package
+App size (rough)
+Duration
+Price
+Modernization Assessment (front door)
+Any
+2–3 weeks
+$7,500–$15,000
+Pilot module
+One module or vertical slice
+4–6 weeks
+$25,000–$45,000
+Small app migration
+Under 50K lines, 1–2 integrations
+6–10 weeks
+$40,000–$90,000
+Mid-size app migration
+50K–200K lines, several integrations
+3–6 months
+$90,000–$200,000
+Large app (phased)
+200K+ lines
+Per phase
+$60,000–$120,000 per phase
+Assessment deliverables: dependency and risk map, effort estimate per module, target architecture, fixed-price quote for the migration. Credit 50% of the assessment fee if they sign the migration within 60 days.
+Pricing logic: a traditional firm quoting a mid-size rewrite often lands at $250K–$500K. Price at 40–60% of that. AI should cut your hours enough to keep your effective rate above $200/hour; measure this on every project and on the YouTube demo.
+Guardrails: fixed price per phase only, written change-control process, client signs off each module's tests before conversion.
+Offer 2: Codebase archaeology and knowledge recovery
+A fixed-price engagement that turns an undocumented system into documentation, tests and AI context files the team can use immediately. It is the easiest first sale: low risk, no production changes, useful even if they never modernize.
+Deliverables:
+Architecture overview and diagrams (system context, components, data flows)
+Business rules catalog: every rule found in code, with file location and plain-English description
+Data dictionary for the main database
+Characterization tests on the 5–10 most critical workflows
+AI context files (for example CLAUDE.md, copilot-instructions.md) so any AI coding tool understands the codebase
+"Bus factor" report: which areas only one person understands, and the risk
+Package
+Scope
+Duration
+Price
+Snapshot
+One app, under 50K lines, docs and AI context files only
+2–3 weeks
+$9,500–$14,000
+Standard
+One app up to 150K lines, full deliverables
+3–5 weeks
+$15,000–$30,000
+Retiring-expert transfer
+Standard plus recorded sessions with the departing developer
+4–6 weeks
+$25,000–$40,000
+Best buyers: companies where a key developer is leaving, after a merger, or before an audit. Credit the Snapshot fee toward a modernization contract signed within 60 days.
+Offer 3: Agent-ready legacy apps
+A secure API and MCP (Model Context Protocol) layer that lets AI assistants such as Microsoft Copilot, Claude or in-house agents read from and act on the client's app, without a rewrite. It turns "we have old software" into "our software works with AI."
+Typical use cases: a plant supervisor asks an assistant for today's open quality holds; a fundraiser asks for lapsed major donors in a region; a support agent's AI drafts a reply using live order data.
+Package
+Scope
+Duration
+Price
+Read-only pilot
+3–5 read-only tools over one app, one AI client, internal users
+3–4 weeks
+$15,000–$25,000
+Production integration
+Read and write tools, auth (Entra ID), audit log, rate limits, human approval on writes
+6–10 weeks
+$40,000–$75,000
+Multi-system agent layer
+2–4 apps behind one governed tool layer
+8–14 weeks
+$75,000–$140,000
+Non-negotiables in every build: least-privilege access, an audit trail of every agent action, human confirmation on any write, and a written data-handling policy for which AI vendors may see what.
+Upsell path: modernization makes this cheaper, and this makes the case for modernization. Offer it as the final phase of every Offer 1 project.
+Training and retainer packages
+Training is sold on the client's own codebase, never as generic AI training; retainers start the month a project ends. Together they should reach 35–45% of revenue by month 12.
+Training
+Package
+Format
+Price
+AI-Assisted Maintenance Workshop
+2 days on their codebase, up to 12 developers
+$8,000–$12,000
+AI Engineering Enablement Program
+6 weeks: kickoff, weekly sessions, pairing, team guardrails and review policy
+$25,000–$40,000
+Public cohort course (from month 9)
+4-week online cohort, "Modernize Legacy .NET with AI"
+$900–$1,500 per seat
+Curriculum core: AI context files, agentic coding workflows, reviewing AI-generated code, test-first changes, security and licensing guardrails, measuring productivity honestly.
+Retainers (3-month minimum)
+Tier
+Includes
+Price per month
+Essentials
+10 hours, monthly architecture call, review of AI-generated pull requests, dependency and security updates
+$3,000–$3,500
+Growth
+25 hours, bi-weekly calls, priority support, small enhancements, quarterly modernization roadmap
+$6,500–$7,500
+Fractional modernization lead
+About 2 days a week: own the roadmap, mentor the team, vendor and AI-tool decisions
+$10,000–$12,000
+Unused hours do not roll over. Work beyond the tier is billed at $200/hour or quoted as a fixed-price add-on.
+YouTube demo series: "Legacy to Modern with AI"
+Season 1 is an 11-episode, end-to-end modernization of a real legacy .NET app, filmed so each episode demonstrates one paid offer. The goal is credibility and booked calls, not ad revenue: 1,000–5,000 subscribers in year 1 is a good result for this niche.
+Demo app: Microsoft's archived eShopModernizing repository (MIT license). It includes a WebForms app, an MVC 5 app and a WinForms + WCF N-tier app, all on .NET Framework with SQL Server. Microsoft only containerized it ("lift and shift"), so a true modernization with AI is fresh content. Use the WinForms + WCF app for Season 1; it is the most painful and most common in your target industries.
+Season 2 (months 7–12): build your own realistic VB.NET WinForms "donor management" or "plant quality tracker" app (dated patterns, stored procedures, no tests) and modernize it. This speaks directly to your primary vertical.readywhe
+Season 1 episodes
+#
+Episode
+Offer it sells
+Length
+1
+"I modernized a 2017 WinForms + WCF app with AI. Here's the honest result" (trailer with the final before/after)
+All
+8–10 min
+2
+AI-powered legacy assessment: dependency map, risk report, effort estimate in one afternoon
+Assessment
+15–20 min
+3
+Codebase archaeology: AI recovers the business rules, diagrams and data dictionary
+Offer 2
+15–20 min
+4
+Build the safety net: AI-generated characterization tests before changing a line
+Offer 2 / 1
+15–20 min
+5
+Migration part 1: .NET Framework to modern .NET with an AI coding agent
+Offer 1
+20–25 min
+6
+Migration part 2: WCF to a REST API, EF6 to EF Core
+Offer 1
+20–25 min
+7
+Migration part 3: WinForms to Blazor (and when to keep the desktop app)
+Offer 1
+20–25 min
+8
+Deploy to Azure with CI/CD, and what it costs per month
+Offer 1
+15 min
+9
+Make it agent-ready: an MCP server so AI assistants can use the catalog safely
+Offer 3
+20 min
+10
+How a dev team maintains this with AI: context files, review rules, guardrails
+Training / retainer
+15–20 min
+11
+Retrospective: hours spent, AI tool cost, what AI got wrong, versus a traditional estimate
+All (case study)
+12–15 min
+Rules that make the series sell: show the AI's mistakes and how you caught them (this is your value); keep a running time-and-cost log from day one; end every episode with one call to action to the free checklist.
+Production plan
+Build first, film second. Do the whole migration privately in months 1–2, then re-record it cleanly. This avoids a stalled series.
+Cadence: one long episode every 2 weeks, plus 3 Shorts and 2 LinkedIn clips cut from each.
+Effort: 8–12 hours per episode for you; outsource editing at $150–400 per episode.
+Gear: good USB microphone, 1080p+ webcam, screen-recording software, simple lighting: $500–1,500 total.
+Repository: publish the modernized code on GitHub, with a branch per episode.
+Funnel
+Video ? free "Legacy .NET Modernization Readiness Checklist" (email capture) ? weekly newsletter ? 30-minute free call ? paid assessment. Track subscribers, checklist downloads, calls booked and assessments sold every month.
+Sales and marketing beyond YouTube
+Your first 3–5 clients will almost certainly come from your existing network, not YouTube. Spend about 60% of marketing time on direct outreach until month 6.
+Warm network (weeks 1–8): list 100 former colleagues, managers and clients across fundraising, manufacturing, telecom and automotive. Send a personal note offering a free 30-minute "legacy app health check" call. Expect 10–15 conversations and 2–3 paid assessments.
+Founding-client offer: the first 2 assessments at $5,000 in exchange for a case study and testimonial.
+LinkedIn: 3 posts a week: one lesson from the build, one client-style story, one short video clip. Rename your headline to the positioning line.
+Referral partners: managed IT service providers, Microsoft Dynamics and Azure partners, Blackbaud consultants and ERP resellers. They meet legacy apps daily and rarely modernize custom code. Offer 10% of the first project.
+Speaking: local .NET user groups, .NET Conf community events, nonprofit tech events (such as NTEN) and regional manufacturing associations. One talk a quarter.
+Written case studies: every project becomes a one-page case study with hours, cost and outcome.
+Website: a one-page site with the three offers, prices "starting at", the YouTube series and a booking link.
+Sales process: discovery call ? short written proposal within 48 hours ? paid assessment ? fixed-price migration quote ? training add-on ? retainer proposal in the final project week.
+Financial projections, year 1
+The target scenario reaches about $355K revenue with roughly 1,650 billable hours, an effective rate near $215/hour. Most project revenue lands in months 4–12; months 1–3 are mostly setup, content and the first assessments.
+Revenue line
+Conservative
+Target
+Stretch (needs a subcontractor)
+Assessments
+3 × $8K = $24K
+5 × $10K = $50K
+8 × $11K = $88K
+Codebase archaeology
+1 × $15K = $15K
+2 × $20K = $40K
+3 × $22K = $66K
+Modernization projects
+1 × $50K = $50K
+2 × $60K = $120K
+3 × $70K = $210K
+Agent-ready integrations
+—
+1 × $25K = $25K
+2 × $35K = $70K
+Training (incl. cohort)
+2 × $9K = $18K
+3 × $10K = $30K
+4 × $12K + 20 seats = $72K
+Retainers (avg. 6 months each)
+2 × $3.5K/mo = $42K
+3 × $5K/mo = $90K
+4 × $6K/mo = $144K
+Total revenue
+$149K
+$355K
+$650K
+Year 1 operating costs: about $20K–37K.
+Cost
+Annual estimate
+AI coding tools and Azure credits
+$4,000–8,000
+E&O and cyber liability insurance
+$3,000–6,000
+Legal (MSA, SOW, NDA templates) and accounting
+$4,000–6,000
+Video gear and outsourced editing
+$4,000–8,000
+Website, CRM, email, scheduling
+$1,500–3,000
+Events, user groups, travel
+$3,000–6,000
+Cash runway: keep 6 months of personal expenses in reserve before you start; the first sizable project payment may not arrive until month 3 or 4. Bill fixed-price work 40% upfront, 40% at the midpoint and 20% on acceptance.
+12-month execution roadmap
+Four phases, each closed by a gate; if a gate slips by more than a month, shift time from content to direct outreach until it is met.
+12-month roadmap · 4 phases, 4 gates, starting October 2026
+Weekly rhythm once launched: 3 days client delivery, 1 day content (filming, editing, LinkedIn), 1 day sales and outreach.
+Risks, mitigations and business setup
+The two risks that sink most solo consultancies are a fixed-price project that overruns and an empty pipeline after the first big project; the plan is built around both.
+Risk
+Mitigation
+Fixed-price overrun
+Paid assessment first; price per phase; written change control; 15% contingency in every quote
+Client code sent to AI tools
+Enterprise AI plans that do not train on customer data, or tools on the client's own accounts; data-handling clause in the MSA
+AI-generated bugs or license issues
+Characterization tests before conversion, human review of every change, dependency license scan
+Pipeline gaps (feast or famine)
+Retainers by month 6; keep 1 day a week for marketing even when busy
+YouTube grows slowly
+Treat it as a sales asset you send to prospects, not as the lead source; outreach carries months 1–6
+AI tools change quickly
+Sell a method (assess, test, convert, verify, train), not a specific tool
+Solo capacity ceiling
+Line up 1–2 trusted .NET subcontractors by month 6
+Business setup checklist (month 1):
+? Form an LLC; ask an accountant about S-corp election once profit exceeds roughly $80K–100K
+? Business bank account and bookkeeping software
+? Lawyer-reviewed Master Services Agreement, SOW template and mutual NDA (IP ownership, AI-tool use and liability cap clauses)
+? E&O (professional liability) and cyber insurance
+? Business name, domain, one-page website, booking link
+? Microsoft Partner Network membership (free tier) for credibility and Azure benefits
+This plan is not legal or tax advice; confirm the entity, contracts and insurance with a lawyer and accountant in your state.
